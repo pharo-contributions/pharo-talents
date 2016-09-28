@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfTalents",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfTalents",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
