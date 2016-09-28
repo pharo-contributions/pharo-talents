@@ -1,0 +1,14 @@
+{
+	"category" : "Talents",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "Talent",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

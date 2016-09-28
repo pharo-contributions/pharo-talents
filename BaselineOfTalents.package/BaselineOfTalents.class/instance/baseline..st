@@ -6,8 +6,13 @@ baseline: spec
 			repository: 'github://tesonep/pharo-AtomicClassInstaller/mc';
 			loads: 'core' ];
 
+		package: 'Talents'
+			with: [ spec requires: #(AtomicClassInstaller) ];
+		package: 'Talents-Tests'
+			with: [ spec requires: #(core) ];
+
 		group: 'core'
 			with: #(Talents);
-		group: 'dev'
-			with: #(core 'Talents-Tests')
+		group: 'test'
+			with: #('Talents-Tests')
 	]
