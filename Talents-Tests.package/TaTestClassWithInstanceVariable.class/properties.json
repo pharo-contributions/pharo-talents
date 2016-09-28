@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "TaSimpleTalentTests",
+		"anInstanceVariable" ],
+	"name" : "TaTestClassWithInstanceVariable",
 	"pools" : [
 		 ],
-	"super" : "TaAbstractTest",
+	"super" : "Object",
 	"type" : "normal" }

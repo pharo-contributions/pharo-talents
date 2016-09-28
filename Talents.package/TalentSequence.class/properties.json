@@ -1,5 +1,5 @@
 {
-	"category" : "Talents",
+	"category" : "Talents-Compositions",
 	"classinstvars" : [
 		 ],
 	"classtraitcomposition" : "TTalentOperations classTrait",
@@ -7,10 +7,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"name",
-		"methods",
-		"slots" ],
-	"name" : "Talent",
+		"members" ],
+	"name" : "TalentSequence",
 	"pools" : [
 		 ],
 	"super" : "Object",

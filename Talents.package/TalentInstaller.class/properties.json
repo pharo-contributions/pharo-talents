@@ -1,14 +1,14 @@
 {
-	"category" : "Talents-Tests",
+	"category" : "Talents-Installer",
 	"classinstvars" : [
-		 ],
+		"uniqueInstance" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "TaSimpleTalentTests",
+	"name" : "TalentInstaller",
 	"pools" : [
 		 ],
-	"super" : "TaAbstractTest",
+	"super" : "Object",
 	"type" : "normal" }

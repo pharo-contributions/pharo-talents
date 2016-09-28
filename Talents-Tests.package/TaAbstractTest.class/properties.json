@@ -6,9 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "TaSimpleTalentTests",
+		"taTestTalentUsingAMessageDefined",
+		"taTestTalent",
+		"taTestTalentWithTwoMethods" ],
+	"name" : "TaAbstractTest",
 	"pools" : [
 		 ],
-	"super" : "TaAbstractTest",
+	"super" : "TestCase",
 	"type" : "normal" }

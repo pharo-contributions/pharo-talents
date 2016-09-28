@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "TaSimpleTalentTests",
+	"name" : "TaTestTalentUsingAMessageDefined",
 	"pools" : [
 		 ],
-	"super" : "TaAbstractTest",
+	"super" : "Talent",
 	"type" : "normal" }
