@@ -8,7 +8,8 @@
 	"instvars" : [
 		"taTestTalentUsingAMessageDefined",
 		"taTestTalent",
-		"taTestTalentWithTwoMethods" ],
+		"taTestTalentWithTwoMethods",
+		"taRecursiveMethodTalent" ],
 	"name" : "TaAbstractTest",
 	"pools" : [
 		 ],
