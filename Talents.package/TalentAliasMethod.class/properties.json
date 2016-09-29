@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"talent",
-		"selector" ],
-	"name" : "TalentRemoveMethod",
+		"oldSelector",
+		"newSelector",
+		"talent" ],
+	"name" : "TalentAliasMethod",
 	"pools" : [
 		 ],
 	"super" : "TaAbstractTalentComposition",

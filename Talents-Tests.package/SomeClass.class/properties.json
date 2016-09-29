@@ -2,13 +2,15 @@
 	"category" : "Talents-Tests",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TSimple classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "TaTestTalent",
+	"name" : "SomeClass",
 	"pools" : [
 		 ],
-	"super" : "Talent",
+	"super" : "Object",
+	"traitcomposition" : "TSimple @ {#algo2:->#algo:} - {#algo:}",
 	"type" : "normal" }
