@@ -1,3 +1,5 @@
 accessing
 compiledMethodAt:selector
-	^ methods detect:[:e | e selector = selector]
+	| newSelector |
+	newSelector := self transformSelector: selector.
+	^ methods detect:[:e | e selector = newSelector]

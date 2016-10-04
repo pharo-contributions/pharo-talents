@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 selectors
 	^ members flatCollect: #selectors

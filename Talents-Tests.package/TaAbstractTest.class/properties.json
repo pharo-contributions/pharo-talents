@@ -9,7 +9,10 @@
 		"taTestTalentUsingAMessageDefined",
 		"taTestTalent",
 		"taTestTalentWithTwoMethods",
-		"taRecursiveMethodTalent" ],
+		"taRecursiveMethodTalent",
+		"taTalentWithASlot",
+		"taTalentWithASlotInitialized",
+		"taAnotherInitializedSlot" ],
 	"name" : "TaAbstractTest",
 	"pools" : [
 		 ],

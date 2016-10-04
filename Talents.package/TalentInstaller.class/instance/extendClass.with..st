@@ -7,6 +7,7 @@ extendClass: aClass with:aTalent
 
 	builder 
 		name: (aClass name , '_' , aTalent name);
+		slots: aTalent slots;
 		superclass: aClass.	  
 	
 	newClass := builder build.

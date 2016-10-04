@@ -1,0 +1,3 @@
+initialization
+initializeSelectorForMe
+	^ self shouldBeImplemented
