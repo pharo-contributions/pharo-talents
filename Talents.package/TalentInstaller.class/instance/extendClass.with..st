@@ -1,4 +1,4 @@
-as yet unclassified
+operations
 extendClass: aClass with:aTalent
 	| builder newClass |
 	builder := ShiftClassBuilder new
@@ -13,5 +13,7 @@ extendClass: aClass with:aTalent
 	newClass := builder build.
 
 	aTalent selectors do: [:sel | newClass recompile: sel from: aTalent].	
+
+	talentedClasses at: newClass put: aTalent.
 
 	^ newClass

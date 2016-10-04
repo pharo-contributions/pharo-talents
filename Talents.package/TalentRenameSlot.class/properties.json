@@ -7,10 +7,9 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"oldName",
-		"newName",
-		"talent" ],
+		"newName" ],
 	"name" : "TalentRenameSlot",
 	"pools" : [
 		 ],
-	"super" : "TaAbstractTalentComposition",
+	"super" : "TaSingleTalentComposition",
 	"type" : "normal" }

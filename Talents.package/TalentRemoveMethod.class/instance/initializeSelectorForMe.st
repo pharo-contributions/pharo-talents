@@ -1,3 +1,0 @@
-accessing
-initializeSelectorForMe
-	^ talent initializeSelectorForMe.

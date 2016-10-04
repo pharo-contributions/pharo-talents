@@ -1,12 +1,14 @@
-as yet unclassified
-addTalent: aTalent to:anObject
-	| originalClass newObject newClass |
+public API
+addTalent: talentToAdd to:anObject
+	| originalClass newObject newClass calculatedTalent |
 	
-	originalClass := anObject class.
-	newClass := self extendClass: originalClass with:aTalent.
+	originalClass := self findOriginalClass: anObject.
+	calculatedTalent := self calculateNewTalentFor: anObject adding: talentToAdd.
+	
+	newClass := self extendClass: originalClass with:calculatedTalent.
 	
 	newObject := self copyObject: anObject withNewClass: newClass.
 	anObject becomeForward: newObject copyHash: false.
 	
-	self talent:aTalent addedTo: newObject.
+	self talent:talentToAdd addedTo: newObject.
 	^ newObject 

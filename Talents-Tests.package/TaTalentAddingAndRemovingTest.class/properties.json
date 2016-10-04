@@ -1,14 +1,14 @@
 {
-	"category" : "Talents-Compositions",
+	"category" : "Talents-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"selector" ],
-	"name" : "TalentRemoveMethod",
+		 ],
+	"name" : "TaTalentAddingAndRemovingTest",
 	"pools" : [
 		 ],
-	"super" : "TalentAliasMethod",
+	"super" : "TaAbstractTest",
 	"type" : "normal" }

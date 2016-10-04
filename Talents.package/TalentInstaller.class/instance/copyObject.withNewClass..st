@@ -1,4 +1,4 @@
-as yet unclassified
+operations
 copyObject: oldObject withNewClass: newClass
 	| newObject |
 	newObject := newClass basicNew.
