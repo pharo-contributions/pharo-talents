@@ -1,6 +1,6 @@
 as yet unclassified
 rewriteText: aSelector
-	| stream keywords |
+	| stream |
 	aSelector numArgs == 0
 		ifTrue: [ ^ 'self ' , aSelector asString ].
 

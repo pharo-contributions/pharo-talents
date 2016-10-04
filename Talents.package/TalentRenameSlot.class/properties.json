@@ -1,0 +1,16 @@
+{
+	"category" : "Talents-Compositions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"oldName",
+		"newName",
+		"talent" ],
+	"name" : "TalentRenameSlot",
+	"pools" : [
+		 ],
+	"super" : "TaAbstractTalentComposition",
+	"type" : "normal" }
