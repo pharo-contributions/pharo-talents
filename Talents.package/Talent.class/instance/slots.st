@@ -1,3 +1,3 @@
 accessing
 slots
-	^ slots
+	^ innerClass slots

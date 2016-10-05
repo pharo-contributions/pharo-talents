@@ -1,27 +1,26 @@
 as yet unclassified
 setUp
-	taTestTalent := Talent named:#TaTestTalent.
+	taTestTalent := self newTalent:#TaTestTalent.
 	taTestTalent compile: '
 	someMessage
 	^ 42.'.
 	
-	taTestTalentUsingAMessageDefined := Talent named:#TaTestTalentUsingAMessageDefined.
+	taTestTalentUsingAMessageDefined := self newTalent:#TaTestTalentUsingAMessageDefined.
 	taTestTalentUsingAMessageDefined compile: '
 	anotherMessage
 	^ self anInstanceVariable.'.
 	
-	taTestTalentWithTwoMethods := Talent named: #TaTestTalentWithTwoMethods.
+	taTestTalentWithTwoMethods := self newTalent: #TaTestTalentWithTwoMethods.
 	taTestTalentWithTwoMethods compile: ' aM1 ^ 42'.
 	taTestTalentWithTwoMethods compile: ' aM2 ^ 22'.
 	
-	taRecursiveMethodTalent := Talent named: #TaRecursiveMethodTalent.
+	taRecursiveMethodTalent := self newTalent: #TaRecursiveMethodTalent.
 	taRecursiveMethodTalent compile: '
 		someRecursive: x 
 			^ x = 0 ifTrue:[ 0 ] ifFalse:[ x + (self someRecursive: x - 1) ]
 	'.
 	
-	taTalentWithASlot := Talent named: #TaTalentWithASlot.
-	taTalentWithASlot slots add: #anSlot => InstanceVariableSlot.
+	taTalentWithASlot := self newTalent: #TaTalentWithASlot with: {#anSlot => InstanceVariableSlot}.
 	taTalentWithASlot compile: '
 		anSlot
 			^ anSlot.
@@ -31,8 +30,7 @@ setUp
 			anSlot:=aValue.
 	'.
 	
-	taTalentWithASlotInitialized := Talent named: #TaTalentWithASlotInitiliazed.
-	taTalentWithASlotInitialized slots add: #anSlot.
+	taTalentWithASlotInitialized := self newTalent: #TaTalentWithASlotInitiliazed with: #(anSlot).
 	taTalentWithASlotInitialized compile: '
 		anSlot
 			^ anSlot.
@@ -42,8 +40,7 @@ setUp
 			anSlot := 55.
 	'.
 	
-	taAnotherInitializedSlot := Talent named: #TaAnotherInitializedSlot.
-	taAnotherInitializedSlot slots add: #anotherSlot.
+	taAnotherInitializedSlot := self newTalent: #TaAnotherInitializedSlot with: #(anotherSlot).
 	taAnotherInitializedSlot compile: '
 		anotherSlot
 			^ anotherSlot.

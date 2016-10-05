@@ -1,6 +1,8 @@
 public API
-addTalent: talentToAdd to:anObject
-	| originalClass newObject newClass calculatedTalent |
+addTalent: aClass to:anObject
+	| originalClass newObject newClass calculatedTalent talentToAdd|
+
+	talentToAdd := aClass asTalent.
 	
 	originalClass := self findOriginalClass: anObject.
 	calculatedTalent := self calculateNewTalentFor: anObject adding: talentToAdd.

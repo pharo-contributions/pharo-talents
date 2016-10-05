@@ -4,7 +4,7 @@ testAddingTwoNonClashingTalents
 	x := TaTestClassWithInstanceVariable new.
 	x anInstanceVariable: 32.
 	
-	x addTalent: (taTestTalent , taTestTalentUsingAMessageDefined).
+	x addTalent: (taTestTalent asTalent , taTestTalentUsingAMessageDefined asTalent).
 	
 	self assert: x someMessage equals: 42.
 	self assert: x anotherMessage equals: 32.

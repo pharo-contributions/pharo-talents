@@ -4,7 +4,7 @@ testRemovingADepthAliasTalent
 	x := Object new.
 
 	x addTalent: taTestTalent.
-	x addTalent: (taRecursiveMethodTalent @= (#someRecursive: -> #mRecursive:)).
+	x addTalent: (taRecursiveMethodTalent asTalent @= (#someRecursive: -> #mRecursive:)).
 
 	self assert: x someMessage equals: 42.
 	self assert: (x mRecursive:5 ) equals: 15.

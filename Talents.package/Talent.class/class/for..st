@@ -1,5 +1,5 @@
 as yet unclassified
-named: aName
+for: aClass
 	^ self new
-		name: aName;
+		innerClass: aClass;
 		yourself

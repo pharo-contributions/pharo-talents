@@ -1,0 +1,3 @@
+operations
+= anotherTrait
+	^ self shouldBeImplemented

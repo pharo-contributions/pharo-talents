@@ -7,8 +7,7 @@ testAdding2SimpleTalent
 	self assert: x someMessage equals: 42.
 	self deny: (Object canUnderstand: #someMessage).
 	
-	t2 := Talent named: #T2.
-	t2 slots: #(someInstanceVariable).
+	t2 := self newTalent: #T2 with: #(someInstanceVariable).
 
 	t2 compile: ' someInstanceVariable: aValue
 		someInstanceVariable := aValue.

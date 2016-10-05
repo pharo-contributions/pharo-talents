@@ -1,3 +1,3 @@
 accessing
-compileMethodAt: selector
+compiledMethodAt: selector
 	^ self shouldBeImplemented

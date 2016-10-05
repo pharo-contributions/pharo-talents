@@ -1,6 +1,9 @@
 public API
-removeTalent: talentToRemove from: anObject
-	| originalClass newObject newClass calculatedTalent |
+removeTalent: aClass from: anObject
+	| originalClass newObject newClass calculatedTalent talentToRemove |
+	
+	talentToRemove := aClass asTalent.
+	
 	originalClass := self findOriginalClass: anObject.
 	calculatedTalent := self calculateNewTalentFor: anObject removing: talentToRemove.
 
