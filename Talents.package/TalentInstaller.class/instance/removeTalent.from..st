@@ -1,15 +1,8 @@
 public API
 removeTalent: aClass from: anObject
-	| originalClass newObject newClass calculatedTalent talentToRemove |
+	| newObject |
 	
-	talentToRemove := aClass asTalent.
-	
-	originalClass := self findOriginalClass: anObject.
-	calculatedTalent := self calculateNewTalentFor: anObject removing: talentToRemove.
-
-	calculatedTalent ifNotNil: [ newClass := self extendClass: originalClass with: calculatedTalent ] ifNil: [ newClass := originalClass ].
-
-	newObject := self copyObject: anObject withNewClass: newClass.
+	newObject := self copyWithoutTalent: aClass from: anObject. 
 	anObject becomeForward: newObject copyHash: false.
 
 	^ newObject
