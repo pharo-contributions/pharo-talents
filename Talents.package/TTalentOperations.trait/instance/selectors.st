@@ -1,0 +1,3 @@
+operations
+selectors
+	^ self shouldBeImplemented

@@ -18,7 +18,7 @@ extendClass: aClass with: aTalent
 
 	newClass := builder build.
 
-	aTalent selectors do: [ :sel | newClass recompile: sel from: aTalent ].
+	aTalent compileAllInto: newClass.
 
 	talentedClasses at: newClass put: aTalent.
 

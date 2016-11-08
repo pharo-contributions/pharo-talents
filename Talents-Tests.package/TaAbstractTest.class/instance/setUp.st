@@ -1,5 +1,7 @@
 as yet unclassified
 setUp
+	TalentInstaller reset.
+
 	taTestTalent := self newTalent:#TaTestTalent.
 	taTestTalent compile: '
 	someMessage
