@@ -1,7 +1,6 @@
 operations
 extendClass: aClass with: aTalent
 	| builder newClass |
-	
 	talentedClasses associations
 		detect: [ :e | e value = aTalent ]
 		ifFound: [ :e | ^ e key ]
@@ -14,6 +13,7 @@ extendClass: aClass with: aTalent
 	builder
 		name: aClass name , '_' , aTalent name;
 		slots: aTalent slots;
+		layoutClass: aClass classLayout class;
 		superclass: aClass.
 
 	newClass := builder build.
