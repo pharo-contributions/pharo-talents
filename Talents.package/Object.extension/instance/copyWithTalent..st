@@ -1,3 +1,3 @@
 *Talents
 copyWithTalent: aClass
-	^ TalentInstaller uniqueInstance copyWithTalent: aClass to:self.
+	^ TalentInstaller uniqueInstance copyObject: self withTalent: aClass

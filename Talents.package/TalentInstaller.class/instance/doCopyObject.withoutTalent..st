@@ -1,5 +1,5 @@
 operations
-doCopyWithoutTalent: aClass from: anObject
+doCopyObject: anObject withoutTalent: aClass
 	| originalClass newObject newClass calculatedTalent talentToRemove |
 	
 	talentToRemove := aClass asTalent.

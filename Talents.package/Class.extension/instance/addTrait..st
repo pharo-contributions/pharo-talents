@@ -1,4 +1,4 @@
 *Talents
 addTrait: aClass 
 	
-	^ TalentInstaller uniqueInstance addTrait: aClass to: self.
+	^ TalentInstaller uniqueInstance addTrait: aClass toClass: self.

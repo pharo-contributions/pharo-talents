@@ -1,6 +1,6 @@
-public API
-doCopyWithTrait: traitToAdd to: aTargetClass
-	| originalClass newObject newClass calculatedTalent |
+operations
+doCopyClass: aTargetClass withTrait: traitToAdd
+	| originalClass calculatedTalent |
 
 	originalClass := self findOriginalClass: aTargetClass.
 	calculatedTalent := self calculateNewTalentFor: aTargetClass adding: traitToAdd.

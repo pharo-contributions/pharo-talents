@@ -1,4 +1,4 @@
 *Talents
 removeTalent: aTalent
-	^ TalentInstaller uniqueInstance removeTalent: aTalent from:self.
+	^ TalentInstaller uniqueInstance removeTalent: aTalent fromObject:self.
 	
