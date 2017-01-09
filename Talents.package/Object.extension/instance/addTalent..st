@@ -1,4 +1,4 @@
 *Talents
-addTalent: aTalent
-	^ TalentInstaller uniqueInstance addTalent: aTalent to:self.
+addTalent: aClass
+	^ TalentInstaller uniqueInstance addTalent: aClass to:self.
 	
