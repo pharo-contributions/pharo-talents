@@ -1,15 +1,12 @@
 operations
-doCopyWithTalent: aClass to:anObject
-	| originalClass newObject newClass calculatedTalent talentToAdd|
+doCopyWithTalent: aTalent to: anObject
+	| newObject newClass talentToAdd|
 
-	talentToAdd := aClass asTalent.
-	
-	originalClass := self findOriginalClass: anObject.
-	calculatedTalent := self calculateNewTalentFor: anObject adding: talentToAdd.
-	
-	newClass := self extendClass: originalClass with:calculatedTalent.
-	
-	newObject := self copyObject: anObject withNewClass: newClass.
-	
-	self talent:talentToAdd addedTo: newObject.
+	talentToAdd := aTalent asTalent.
+
+	newClass := self doCopyWithTrait: talentToAdd to: anObject class.
+	newObject := self copyObject: anObject withNewClass: newClass.	
+
+	self talent: talentToAdd addedTo: newObject.
+
 	^ newObject 

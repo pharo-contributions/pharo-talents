@@ -4,7 +4,7 @@ doCopyWithoutTalent: aClass from: anObject
 	
 	talentToRemove := aClass asTalent.
 	
-	originalClass := self findOriginalClass: anObject.
+	originalClass := self findOriginalClass: anObject class.
 	calculatedTalent := self calculateNewTalentFor: anObject removing: talentToRemove.
 
 	calculatedTalent ifNotNil: [ newClass := self extendClass: originalClass with: calculatedTalent ] ifNil: [ newClass := originalClass ].

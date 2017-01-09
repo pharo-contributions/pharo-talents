@@ -1,4 +1,4 @@
-as yet unclassified
+tests-talents
 testRemovingMethodInADeepAliasTalent
 	| x | 
 	x := Object new.

@@ -1,3 +1,3 @@
 operations
-findOriginalClass: anObject
-	^ talentedClasses at: anObject class ifPresent: [ anObject class superclass ] ifAbsent: [ anObject class ]
+findOriginalClass: aClass
+	^ talentedClasses at: aClass ifPresent: [ aClass superclass ] ifAbsent: [ aClass ]

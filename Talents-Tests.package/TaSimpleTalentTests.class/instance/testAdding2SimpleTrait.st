@@ -1,8 +1,8 @@
-tests-talents
-testAdding2SimpleTalent
-	| x t2 |
-	x := Object new.
-	x addTalent: taTestTalent.
+tests-traits
+testAdding2SimpleTrait
+	| x t2 traitedClass |
+	traitedClass := Object copyWithTrait: taTestTalent.
+	x := traitedClass new.
 	
 	self assert: x someMessage equals: 42.
 	self deny: (Object canUnderstand: #someMessage).
@@ -17,7 +17,7 @@ testAdding2SimpleTalent
 		^ someInstanceVariable.
 	'.
 
-	x addTalent: t2.
+	traitedClass addTrait: t2.
 	
 	self assert: x someMessage equals: 42.
 	self deny: (Object canUnderstand: #someMessage).

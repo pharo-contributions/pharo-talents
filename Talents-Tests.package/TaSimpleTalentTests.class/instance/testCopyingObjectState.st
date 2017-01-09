@@ -1,4 +1,4 @@
-as yet unclassified
+tests-talents
 testCopyingObjectState
 	| x |
 	x := TaTestClassWithInstanceVariable new.

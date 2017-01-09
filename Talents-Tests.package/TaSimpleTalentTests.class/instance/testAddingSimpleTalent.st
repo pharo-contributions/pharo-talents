@@ -1,4 +1,4 @@
-as yet unclassified
+tests-talents
 testAddingSimpleTalent
 	| x |
 	x := Object new.
