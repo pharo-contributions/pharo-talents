@@ -2,7 +2,7 @@ tests-talents
 testAddingMethodInADeepAliasTalent
 	| x | 
 	x := Object new.
-	x addTalent: (taTestTalent asTalent @= (#someMessage -> #newMessage)).
+	x addTalent: (taTestTalent asComposition @= (#someMessage -> #newMessage)).
 	
 	self assert: x newMessage equals:42.
 	

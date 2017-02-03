@@ -4,7 +4,7 @@ testRemovingAnAliasTalent
 	x := Object new.
 
 	x addTalent: taTestTalent.
-	x addTalent: taTestTalentWithTwoMethods asTalent @ (#aM1 -> #m1).
+	x addTalent: taTestTalentWithTwoMethods asComposition @ (#aM1 -> #m1).
 
 	self assert: x someMessage equals: 42.
 	self assert: x m1 equals: 42.

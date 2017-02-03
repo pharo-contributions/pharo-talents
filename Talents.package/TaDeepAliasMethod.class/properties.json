@@ -1,0 +1,14 @@
+{
+	"category" : "Talents-Compositions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TaDeepAliasMethod",
+	"pools" : [
+		 ],
+	"super" : "TaAliasMethod",
+	"type" : "normal" }

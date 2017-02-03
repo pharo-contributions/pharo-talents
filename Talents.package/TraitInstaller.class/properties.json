@@ -1,0 +1,14 @@
+{
+	"category" : "Talents-Installer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"annonymousTraitedClasses" ],
+	"name" : "TraitInstaller",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

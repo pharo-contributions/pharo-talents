@@ -1,0 +1,14 @@
+{
+	"category" : "Talents-Compositions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TaEmptyComposition",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
