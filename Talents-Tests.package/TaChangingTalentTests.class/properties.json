@@ -10,5 +10,5 @@
 	"name" : "TaChangingTalentTests",
 	"pools" : [
 		 ],
-	"super" : "TaAbstractTest",
+	"super" : "TaAbstractTalentTest",
 	"type" : "normal" }

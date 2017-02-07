@@ -13,7 +13,7 @@
 		"taTalentWithASlot",
 		"taTalentWithASlotInitialized",
 		"taAnotherInitializedSlot" ],
-	"name" : "TaAbstractTest",
+	"name" : "TaAbstractTalentTest",
 	"pools" : [
 		 ],
 	"super" : "TestCase",
