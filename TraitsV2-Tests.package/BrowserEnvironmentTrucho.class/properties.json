@@ -1,0 +1,14 @@
+{
+	"category" : "TraitsV2-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"classes" ],
+	"name" : "BrowserEnvironmentTrucho",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

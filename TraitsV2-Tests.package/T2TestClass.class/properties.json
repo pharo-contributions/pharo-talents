@@ -1,0 +1,14 @@
+{
+	"category" : "TraitsV2-Tests-Classes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"somethingElse" ],
+	"name" : "T2TestClass",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
