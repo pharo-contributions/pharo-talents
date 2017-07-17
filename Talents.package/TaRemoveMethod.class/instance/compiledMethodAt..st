@@ -1,4 +1,4 @@
 accessing
 compiledMethodAt: aSelector
-	(aSelector = selector ) ifTrue:[NotFound signalFor: aSelector].
+	(removedSelectors includes: aSelector ) ifTrue:[NotFound signalFor: aSelector].
 	^ talent compiledMethodAt: aSelector.

@@ -3,12 +3,8 @@ subclass: aSubclassSymbol uses: aTraitCompositionOrArray slots: slotDefinition c
 	^ self
 		subclass: aSubclassSymbol
 		uses: aTraitCompositionOrArray
-		with: [ 
-			self classInstaller
-				make: [ :builder | 
-					builder
-						name: aSubclassSymbol;
-						superclass: self;
-						slots: slotDefinition;
-						sharedVariables: classVarDefinition;
-						category: aCategorySymbol ] ]
+		layout: FixedLayout
+		slots: slotDefinition
+		classVariables: classVarDefinition
+		poolDictionaries: ''
+		category: aCategorySymbol

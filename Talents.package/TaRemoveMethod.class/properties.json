@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"selector"
+		"removedSelectors"
 	],
 	"name" : "TaRemoveMethod",
 	"type" : "normal"

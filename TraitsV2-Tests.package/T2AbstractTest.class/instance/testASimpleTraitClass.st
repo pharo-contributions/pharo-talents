@@ -2,9 +2,9 @@ tests
 testASimpleTraitClass
 	| newMetaclass newClass traitComposition metaTraitComposition |
 	traitComposition := T2TestClass asComposition.
-	metaTraitComposition := T2TraitedClassTrait asComposition , T2TestClass class asComposition.
+	metaTraitComposition := TraitedClassTrait asComposition , T2TestClass class asComposition.
 
-	newMetaclass := T2TraitedMetaclass new.
+	newMetaclass := TraitedMetaclass new.
 	newMetaclass superclass: Object class withLayoutType: FixedLayout slots: metaTraitComposition slots.
 
 	newClass := newMetaclass new.

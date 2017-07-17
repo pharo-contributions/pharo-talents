@@ -4,10 +4,8 @@ subclass: aName uses: aTraitCompositionOrArray instanceVariableNames: someInstan
 	^ self
 		subclass: aName
 		uses: aTraitCompositionOrArray
-		with: [ 
-			self
-				private_subclass: aName
-				instanceVariableNames: someInstanceVariableNames
-				classVariableNames: someClassVariableNames
-				poolDictionaries: someSharedPoolNames
-				category: aCategory ]
+		layout: FixedLayout
+		slots: someInstanceVariableNames asSlotCollection
+		classVariables: someClassVariableNames
+		poolDictionaries: someSharedPoolNames
+		category: aCategory

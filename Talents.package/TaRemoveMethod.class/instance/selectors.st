@@ -1,3 +1,3 @@
 accessing
 selectors
-	^ talent selectors reject:[:e| e = selector].
+	^ talent selectors reject: [ :e | removedSelectors includes: e ]

@@ -1,6 +1,6 @@
 instance creation
-remove: aSelector to: aTalent
+remove: anArrayOfSelectors to: aTalent
 	^ self new
-		selector: aSelector;
+		removedSelectors: anArrayOfSelectors;
 		talent: aTalent;
 		yourself

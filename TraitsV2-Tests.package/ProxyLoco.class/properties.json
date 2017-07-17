@@ -1,14 +1,13 @@
 {
-	"category" : "TraitsV2-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"delegate" ],
-	"name" : "ProxyLoco",
-	"pools" : [
-		 ],
 	"super" : "Object",
-	"type" : "normal" }
+	"category" : "TraitsV2-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"delegate"
+	],
+	"name" : "ProxyLoco",
+	"type" : "normal"
+}

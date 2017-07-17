@@ -1,8 +1,9 @@
 *TraitsV2-ClassExtensions
-subclass: aTraitName uses: aTraitCompositionOrArray instanceVariableNames: instVarNames classVariableNames: classVarNames package: cat
+subclass: aName uses: aTraitCompositionOrArray instanceVariableNames: instVarNames classVariableNames: classVarNames package: aCategory
 	^ self
-		subclass: aTraitName
+		subclass: aName
 		uses: aTraitCompositionOrArray
 		instanceVariableNames: instVarNames
 		classVariableNames: classVarNames
-		category: cat
+		poolDictionaries: ''
+		package: aCategory

@@ -1,3 +1,0 @@
-initialization
-methods
-	^ myMethodDict values

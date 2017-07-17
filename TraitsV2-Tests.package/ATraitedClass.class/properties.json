@@ -1,16 +1,17 @@
 {
+	"commentStamp" : "",
+	"super" : "Object",
 	"category" : "TraitsV2-Tests-Classes",
 	"classinstvars" : [
 		"myMethodDict",
-		"composition" ],
-	"classvars" : [
-		 ],
-	"commentStamp" : "",
+		"composition"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"somethingElse",
-		"something" ],
+		"something"
+	],
 	"name" : "ATraitedClass",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}
