@@ -1,5 +1,6 @@
 accessing
 sourceCodeAt: aSelector
-	^ aSelector = newSelector
-		ifTrue: [ (talent compiledMethodAt: oldSelector) getSourceReplacingSelectorWith: newSelector  ]
+	^ (self hasAliasForNew: aSelector)
+		ifTrue: [ (talent compiledMethodAt: (self oldSelectorFor: aSelector))
+				getSourceReplacingSelectorWith: aSelector ]
 		ifFalse: [ super sourceCodeAt: aSelector ]

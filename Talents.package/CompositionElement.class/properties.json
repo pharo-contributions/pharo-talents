@@ -1,16 +1,13 @@
 {
-	"category" : "Talents",
-	"classinstvars" : [
-		 ],
-	"classtraitcomposition" : "TCompositionOperations classTrait",
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "TaAbstractComposition",
+	"category" : "Talents-Compositions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
-		"innerClass" ],
+		"innerClass"
+	],
 	"name" : "CompositionElement",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"traitcomposition" : "TCompositionOperations",
-	"type" : "normal" }
+	"type" : "normal"
+}

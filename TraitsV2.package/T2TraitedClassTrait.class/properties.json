@@ -1,15 +1,14 @@
 {
-	"category" : "TraitsV2",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "Class",
+	"category" : "TraitsV2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"myMethodDict",
-		"composition" ],
+		"composition"
+	],
 	"name" : "T2TraitedClassTrait",
-	"pools" : [
-		 ],
-	"super" : "Class",
-	"type" : "normal" }
+	"type" : "normal"
+}

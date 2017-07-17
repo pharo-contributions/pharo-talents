@@ -1,10 +1,10 @@
 {
-	"category" : "Talents-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Talents-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"taTestTalentUsingAMessageDefined",
 		"taTestTalent",
@@ -12,9 +12,8 @@
 		"taRecursiveMethodTalent",
 		"taTalentWithASlot",
 		"taTalentWithASlotInitialized",
-		"taAnotherInitializedSlot" ],
+		"taAnotherInitializedSlot"
+	],
 	"name" : "TaAbstractTalentTest",
-	"pools" : [
-		 ],
-	"super" : "TestCase",
-	"type" : "normal" }
+	"type" : "normal"
+}

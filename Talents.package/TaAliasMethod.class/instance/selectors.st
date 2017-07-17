@@ -1,3 +1,3 @@
 accessing
 selectors
-	^ (talent selectors copyWithout: oldSelector) copyWith: newSelector. 
+	^ (talent selectors reject:[:e | self hasAliasForOld: e]) , self aliases values. 

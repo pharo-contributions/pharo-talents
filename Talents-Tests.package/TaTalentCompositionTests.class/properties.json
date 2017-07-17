@@ -1,14 +1,11 @@
 {
-	"category" : "Talents-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "TaTalentCompositionTests",
-	"pools" : [
-		 ],
 	"super" : "TaAbstractTalentTest",
-	"type" : "normal" }
+	"category" : "Talents-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TaTalentCompositionTests",
+	"type" : "normal"
+}

@@ -1,8 +1,8 @@
 accessing
 compiledMethodAt: aSelector
-	aSelector = oldSelector
+	(self hasAliasForOld: aSelector)
 		ifTrue: [ NotFound signalFor: aSelector ].
 
-	^ aSelector = newSelector
-		ifTrue: [ talent compiledMethodAt: oldSelector ]
+	^ (self hasAliasForNew: aSelector)
+		ifTrue: [ talent compiledMethodAt: (self oldSelectorFor: aSelector) ]
 		ifFalse: [ talent compiledMethodAt: aSelector ]

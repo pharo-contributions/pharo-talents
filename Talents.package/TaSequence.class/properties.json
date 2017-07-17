@@ -1,14 +1,13 @@
 {
-	"category" : "Talents-Compositions",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"members" ],
-	"name" : "TaSequence",
-	"pools" : [
-		 ],
 	"super" : "TaAbstractComposition",
-	"type" : "normal" }
+	"category" : "Talents-Compositions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"members"
+	],
+	"name" : "TaSequence",
+	"type" : "normal"
+}

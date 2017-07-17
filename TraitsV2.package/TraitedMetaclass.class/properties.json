@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Metaclass",
+	"category" : "TraitsV2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"myMethodDict",
+		"composition"
+	],
+	"name" : "TraitedMetaclass",
+	"type" : "normal"
+}

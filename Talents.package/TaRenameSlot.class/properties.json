@@ -1,15 +1,14 @@
 {
-	"category" : "Talents-Compositions",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
+	"super" : "TaSingleComposition",
+	"category" : "Talents-Compositions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"oldName",
-		"newName" ],
+		"newName"
+	],
 	"name" : "TaRenameSlot",
-	"pools" : [
-		 ],
-	"super" : "TaSingleComposition",
-	"type" : "normal" }
+	"type" : "normal"
+}

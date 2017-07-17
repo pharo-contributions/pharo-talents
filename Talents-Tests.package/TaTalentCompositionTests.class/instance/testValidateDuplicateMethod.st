@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testValidateDuplicateMethod
 	| x t1 t2|
 

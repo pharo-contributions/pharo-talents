@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testValidateDuplicateSlot
 	| x t1 t2|
 

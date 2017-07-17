@@ -1,7 +1,6 @@
 as yet unclassified
-alias:anAssociation to: aTalent
+alias:anArrayOfAssociations to: aTalent
 	^ self new
-		oldSelector: anAssociation key;
-		newSelector: anAssociation value;
+		aliases: anArrayOfAssociations asDictionary;
 		talent: aTalent;
 		yourself.

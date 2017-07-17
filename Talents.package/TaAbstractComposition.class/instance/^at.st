@@ -1,3 +1,3 @@
 operations
-@ anAssociation
-	^ TaAliasMethod alias:anAssociation to: self.
+@ anArray
+	^ TaAliasMethod alias:anArray to: self.

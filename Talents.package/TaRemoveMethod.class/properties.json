@@ -1,14 +1,13 @@
 {
-	"category" : "Talents-Compositions",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"selector" ],
-	"name" : "TaRemoveMethod",
-	"pools" : [
-		 ],
 	"super" : "TaSingleComposition",
-	"type" : "normal" }
+	"category" : "Talents-Compositions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"selector"
+	],
+	"name" : "TaRemoveMethod",
+	"type" : "normal"
+}

@@ -1,5 +1,5 @@
 validations
 validateMethods: aNewTalent
 	(self selectors
-		noneSatisfy: [ :e | aNewTalent selectors anySatisfy: [ :other | e name = other name ] ])
+		noneSatisfy: [ :e | aNewTalent selectors includes: e ])
 		ifFalse: [ self error: 'The added talent duplicates an existing selector' ]

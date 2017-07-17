@@ -1,5 +1,5 @@
 transforming selectors
 aliasSelector: aSelector
-	^ aSelector = oldSelector
-		ifTrue: [ newSelector ]
+	^ (self hasAliasForOld: aSelector)
+		ifTrue: [ self newSelectorFor: aSelector ]
 		ifFalse: [ talent aliasSelector: aSelector ]

@@ -1,15 +1,13 @@
 {
-	"category" : "Talents-Compositions",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		"oldSelector",
-		"newSelector" ],
-	"name" : "TaAliasMethod",
-	"pools" : [
-		 ],
 	"super" : "TaSingleComposition",
-	"type" : "normal" }
+	"category" : "Talents-Compositions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"aliases"
+	],
+	"name" : "TaAliasMethod",
+	"type" : "normal"
+}

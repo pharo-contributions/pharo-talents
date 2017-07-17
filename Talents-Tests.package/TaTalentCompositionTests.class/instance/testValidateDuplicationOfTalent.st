@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testValidateDuplicationOfTalent
 	| x |
 	x := Object new.
