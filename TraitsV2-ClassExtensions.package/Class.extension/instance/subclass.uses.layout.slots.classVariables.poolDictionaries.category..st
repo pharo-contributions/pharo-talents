@@ -4,12 +4,7 @@ subclass: aSubclassSymbol uses: aTraitCompositionOrArray layout: layoutClass slo
 	
 	builderEnhancer := TraitBuilderEnhancer new.
 	builderEnhancer traitComposition: aTraitCompositionOrArray asComposition.
-	
-	(self class isKindOf: TraitedMetaclass) ifTrue:[
-		builderEnhancer classTraitComposition: aTraitCompositionOrArray asComposition classComposition.	
-	]ifFalse:[
-		builderEnhancer classTraitComposition: TraitedClassTrait asComposition , aTraitCompositionOrArray asComposition classComposition.		
-	].	
+	builderEnhancer classTraitComposition: aTraitCompositionOrArray asComposition classComposition.	
 	
 	^ ShiftClassInstaller
 		make: [ :builder | 

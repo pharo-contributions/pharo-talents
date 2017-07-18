@@ -1,13 +1,7 @@
-as yet unclassified
+instance creation
 newTalent: aName with: slots
-	| builder |
-	builder := ShiftClassBuilder new
-		buildEnvironment: ShSmalltalkGlobalsEnvironment new;
-		yourself.
-
-	builder
-		name: aName;
-		slots: slots;
-		superclass: Object.
-
-	^builder build
+	| class |
+	class := T2Trait named: aName uses: { } slots: slots category: 'Talents-Tests-TestClasses'  env: self class environment. 
+	createdClasses add:class.
+	
+	^class.

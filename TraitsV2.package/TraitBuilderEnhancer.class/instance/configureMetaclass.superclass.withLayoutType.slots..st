@@ -1,6 +1,8 @@
 class modifications
 configureMetaclass: newMetaclass superclass: superclass withLayoutType: aLayoutType slots: classSlots
-	newMetaclass
-		superclass: superclass
-		withLayoutType: aLayoutType
-		slots: classSlots , classTraitComposition slots
+	| compositionToUse |
+	compositionToUse := (superclass isKindOf: TraitedMetaclass)
+		ifTrue: [ classTraitComposition ]
+		ifFalse: [ TraitedClassTrait asComposition + classTraitComposition ].
+
+	newMetaclass superclass: superclass withLayoutType: aLayoutType slots: classSlots , compositionToUse slots

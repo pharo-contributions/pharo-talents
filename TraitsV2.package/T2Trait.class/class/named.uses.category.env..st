@@ -1,13 +1,8 @@
 instance creation
-named: aSymbol uses: aTraitCompositionOrCollection category: aString env: anEnvironment
-	| trait |
-	trait := super
-		subclass: aSymbol
+named: aName uses: aTraitCompositionOrCollection category: aString env: anEnvironment
+	^ self
+		named: aName
 		uses: aTraitCompositionOrCollection
 		slots: #()
-		classVariables: ''
-		poolDictionaries: ''
-		category: category.
-		
-	trait users: #().
-	^ trait
+		category: aString
+		env: anEnvironment

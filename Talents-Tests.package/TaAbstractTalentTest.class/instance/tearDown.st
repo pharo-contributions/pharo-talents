@@ -1,3 +1,5 @@
-as yet unclassified
+running
 tearDown
 	TalentInstaller reset.
+	createdClasses do:#removeFromSystem.
+	createdClasses := nil.

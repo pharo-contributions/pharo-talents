@@ -1,3 +1,3 @@
 accessing
 classComposition
-	^ ClassCompositionElement for: innerClass theMetaClass
+	^ self class for: innerClass theMetaClass

@@ -1,6 +1,9 @@
-as yet unclassified
+running
 setUp
 	TalentInstaller reset.
+	
+	createdClasses := Set new.
+	
 
 	taTestTalent := self newTalent:#TaTestTalent.
 	taTestTalent compile: '

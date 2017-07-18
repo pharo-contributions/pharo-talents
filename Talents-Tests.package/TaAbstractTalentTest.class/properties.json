@@ -12,7 +12,8 @@
 		"taRecursiveMethodTalent",
 		"taTalentWithASlot",
 		"taTalentWithASlotInitialized",
-		"taAnotherInitializedSlot"
+		"taAnotherInitializedSlot",
+		"createdClasses"
 	],
 	"name" : "TaAbstractTalentTest",
 	"type" : "normal"
