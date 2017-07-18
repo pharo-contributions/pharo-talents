@@ -1,10 +1,12 @@
 tests
-testSequence
-	| t1 t2 c1 obj |
+testIndirectSequence
+	| t1 t2 t3 c1 obj |
 	
 	t1 := self createT1.
 	t2 := self createT2.
-	c1 := self newClass: #C1 with: 'g h' asSlotCollection uses: t1 + t2.
+	t3 := self newTrait: #T3 with: #() uses: t1 + t2.
+		
+	c1 := self newClass: #C1 with: 'g h' asSlotCollection uses: t3.
 
 	obj := c1 new.
 	obj setValues.
