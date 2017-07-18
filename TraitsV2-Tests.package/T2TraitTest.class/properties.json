@@ -1,13 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "T2AbstractTest",
 	"category" : "TraitsV2-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"delegate"
-	],
-	"name" : "ProxyLoco",
+	"instvars" : [ ],
+	"name" : "T2TraitTest",
 	"type" : "normal"
 }

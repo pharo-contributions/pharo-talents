@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CompositionElement",
+	"category" : "Talents-Compositions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ClassCompositionElement",
+	"type" : "normal"
+}

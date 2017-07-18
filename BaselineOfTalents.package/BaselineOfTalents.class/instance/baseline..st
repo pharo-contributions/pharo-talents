@@ -8,8 +8,8 @@ baseline: spec
 
 		package: 'Talents' with: [ spec requires: #(AtomicClassInstaller) ];
 		package: 'TraitsV2' with: [ spec requires: #(AtomicClassInstaller) ];
-		package: 'Talents-Tests' with: [ spec requires: #(core Talents-ClassExtensions) ];
-		package: 'TraitsV2-Tests' with: [ spec requires: #(core Talents-ClassExtensions) ];
+		package: 'Talents-Tests' with: [ spec requires: #(core 'Talents-ClassExtensions') ];
+		package: 'TraitsV2-Tests' with: [ spec requires: #(core 'Talents-ClassExtensions') ];
 		package: 'Talents-ClassExtensions' with: [ spec requires: #(core) ];
 
 		group: 'core'
