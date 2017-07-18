@@ -1,3 +1,3 @@
 accessing
 selectors
-	^ talent selectors
+	^ inner selectors

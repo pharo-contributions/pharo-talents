@@ -1,3 +1,3 @@
 accessing
 selectors
-	^ (talent selectors reject:[:e | self hasAliasForOld: e]) , self aliases values. 
+	^ (inner selectors reject:[:e | self hasAliasForOld: e]) , self aliases keys. 

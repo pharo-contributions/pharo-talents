@@ -1,6 +1,6 @@
 as yet unclassified
-alias:anArrayOfAssociations to: aTalent
+alias:anArrayOfAssociations to: aTrait
 	^ self new
 		aliases: anArrayOfAssociations asDictionary;
-		talent: aTalent;
+		inner: aTrait;
 		yourself.

@@ -1,3 +1,3 @@
 accessing
 methods
-	^innerClass methods
+	^innerClass methods , innerClass composition methods

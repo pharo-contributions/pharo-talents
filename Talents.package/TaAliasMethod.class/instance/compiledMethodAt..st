@@ -4,5 +4,5 @@ compiledMethodAt: aSelector
 		ifTrue: [ NotFound signalFor: aSelector ].
 
 	^ (self hasAliasForNew: aSelector)
-		ifTrue: [ talent compiledMethodAt: (self oldSelectorFor: aSelector) ]
-		ifFalse: [ talent compiledMethodAt: aSelector ]
+		ifTrue: [ inner compiledMethodAt: (self oldSelectorFor: aSelector) ]
+		ifFalse: [ inner compiledMethodAt: aSelector ]

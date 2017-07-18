@@ -1,3 +1,3 @@
-aliasing
+testing
 hasAliasForOld: aSelector
-	^ aliases includesKey: aSelector
+	^ aliases values includes: aSelector

@@ -1,3 +1,3 @@
 accessing
 slots
-	^ talent slots. 
+	^ inner slots. 

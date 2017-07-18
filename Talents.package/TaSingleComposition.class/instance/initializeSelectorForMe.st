@@ -1,3 +1,3 @@
 accessing
 initializeSelectorForMe
-	^ talent initializeSelectorForMe.
+	^ inner initializeSelectorForMe.

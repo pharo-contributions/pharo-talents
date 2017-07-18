@@ -7,7 +7,7 @@ sourceCodeAt: aSelector
 	
 	self aliases
 		associationsDo:
-			[ :assoc | rewriter replace: (self rewriteText: assoc key) with: (self rewriteText: assoc value) ].
+			[ :assoc | rewriter replace: (self rewriteText: assoc value) with: (self rewriteText: assoc key) ].
 	
 	^ (rewriter
 			executeTree: parseTree;

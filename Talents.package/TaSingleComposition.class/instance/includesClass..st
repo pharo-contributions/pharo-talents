@@ -1,3 +1,3 @@
 accessing
 includesClass: aClass
-	^ talent includesClass: aClass.
+	^ inner includesClass: aClass.

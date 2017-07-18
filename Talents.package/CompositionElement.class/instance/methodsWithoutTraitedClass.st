@@ -1,0 +1,3 @@
+accessing
+methodsWithoutTraitedClass
+	^ self methods

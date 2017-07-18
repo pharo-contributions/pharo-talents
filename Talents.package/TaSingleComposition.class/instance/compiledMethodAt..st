@@ -1,3 +1,3 @@
 accessing
 compiledMethodAt: aSelector
-	^ talent compiledMethodAt: aSelector.
+	^ inner compiledMethodAt: aSelector.

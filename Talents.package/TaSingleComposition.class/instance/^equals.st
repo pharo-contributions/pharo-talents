@@ -1,3 +1,3 @@
 accessing
 = another
-	^ (another class = self class) and: [ another talent = talent ]
+	^ (another class = self class) and: [ another inner = inner ]

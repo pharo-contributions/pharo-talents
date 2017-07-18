@@ -1,5 +1,5 @@
 accessing
 without: anotherTalent
-	^ (anotherTalent = self or: [ talent = anotherTalent ])
+	^ (anotherTalent = self or: [ inner = anotherTalent ])
 		ifTrue: [ nil ]
 		ifFalse: [ self ]

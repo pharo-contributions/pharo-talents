@@ -3,8 +3,11 @@ named: aSymbol uses: aTraitCompositionOrCollection category: aString env: anEnvi
 	| trait |
 	trait := super
 		subclass: aSymbol
+		uses: aTraitCompositionOrCollection
 		slots: #()
 		classVariables: ''
 		poolDictionaries: ''
 		category: category.
+		
+	trait users: #().
 	^ trait

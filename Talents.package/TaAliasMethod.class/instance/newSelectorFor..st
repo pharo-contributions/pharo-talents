@@ -1,3 +1,3 @@
-aliasing
+instance creation
 newSelectorFor: aSelector
-	^ aliases at: aSelector
+	^ aliases keyAtValue: aSelector

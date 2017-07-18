@@ -1,3 +1,3 @@
 operations
 addToSequence: sequence
-	self error:'Could not perform on empty composition'
+	"I am empty I will not add my self to anybody"

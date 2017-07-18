@@ -1,3 +1,3 @@
 accessing
 name 
-	^ talent name
+	^ inner name

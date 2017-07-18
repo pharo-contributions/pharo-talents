@@ -1,6 +1,6 @@
 as yet unclassified
 slots
-	^ talent slots
+	^ inner slots
 		collect: [ :e | 
 			| slot |
 			slot := e asSlot.

@@ -1,3 +1,3 @@
 accessing
 talentDefining: selector
-	^ talent
+	^ inner
