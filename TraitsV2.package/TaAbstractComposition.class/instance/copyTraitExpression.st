@@ -1,0 +1,3 @@
+copying
+copyTraitExpression
+	^ self subclassResponsibility 

@@ -1,0 +1,4 @@
+copying
+copyTraitExpression
+	^ self
+	
