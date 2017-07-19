@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "TaSingleComposition",
-	"category" : "Talents-Compositions",
+	"category" : "TraitsV2-Compositions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

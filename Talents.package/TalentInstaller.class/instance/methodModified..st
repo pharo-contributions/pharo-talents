@@ -1,5 +1,6 @@
 events handling
 methodModified: anEvent
 	talentedClasses associations
-		do:
-			[ :assoc | assoc value changeOldMethod: anEvent oldMethod newMethod: anEvent newMethod on: assoc key ]
+		do: [ :assoc | 
+			(assoc value includesTrait: anEvent method methodClass)
+				ifTrue: [ assoc key rebuildMethodDictionary ] ]

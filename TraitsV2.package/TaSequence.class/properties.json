@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "TaAbstractComposition",
-	"category" : "Talents-Compositions",
+	"category" : "TraitsV2-Compositions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"innerClass"
+		"members"
 	],
-	"name" : "CompositionElement",
+	"name" : "TaSequence",
 	"type" : "normal"
 }

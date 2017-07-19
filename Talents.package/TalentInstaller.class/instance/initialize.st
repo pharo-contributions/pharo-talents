@@ -5,6 +5,6 @@ initialize
 	WeakArray addWeakDependent: talentedClasses.
 	
 	SystemAnnouncer uniqueInstance weak
-		when: MethodAdded send: #methodAdded: to: self;
+		when: MethodAdded send: #methodModified: to: self;
 		when: MethodModified send: #methodModified: to: self;
-		when: MethodRemoved send: #methodRemoved: to: self.
+		when: MethodRemoved send: #methodModified: to: self.

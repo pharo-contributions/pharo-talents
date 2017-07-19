@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "TaAbstractComposition",
-	"category" : "Talents-Compositions",
+	"super" : "TaSingleComposition",
+	"category" : "TraitsV2-Compositions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"members"
+		"removedSelectors"
 	],
-	"name" : "TaSequence",
+	"name" : "TaRemoveMethod",
 	"type" : "normal"
 }

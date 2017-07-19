@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "TaAbstractComposition",
-	"category" : "Talents-Compositions",
+	"super" : "CompositionElement",
+	"category" : "TraitsV2-Compositions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "TaEmptyComposition",
+	"name" : "ClassCompositionElement",
 	"type" : "normal"
 }

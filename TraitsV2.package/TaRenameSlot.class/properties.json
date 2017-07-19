@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "TaAbstractComposition",
-	"category" : "Talents-Compositions",
+	"super" : "TaSingleComposition",
+	"category" : "TraitsV2-Compositions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"inner"
+		"oldName",
+		"newName"
 	],
-	"name" : "TaSingleComposition",
+	"name" : "TaRenameSlot",
 	"type" : "normal"
 }

@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "TaAliasMethod",
-	"category" : "Talents-Compositions",
+	"super" : "Object",
+	"category" : "TraitsV2-Compositions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "TaDeepAliasMethod",
+	"name" : "TaAbstractComposition",
 	"type" : "normal"
 }
