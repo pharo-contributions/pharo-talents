@@ -1,0 +1,3 @@
+querying
+traits
+	^ self subclassResponsibility 

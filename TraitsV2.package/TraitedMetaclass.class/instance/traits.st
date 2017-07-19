@@ -1,0 +1,3 @@
+initialization
+traits
+	^ composition traits
