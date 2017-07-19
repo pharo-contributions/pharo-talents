@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "TaAbstractComposition",
 	"category" : "Talents-Compositions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
