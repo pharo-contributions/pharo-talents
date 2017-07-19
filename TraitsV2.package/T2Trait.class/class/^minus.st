@@ -1,3 +1,3 @@
 accessing
 - anArray
-	^ self asComposition - anArray
+	^ self asTraitComposition - anArray

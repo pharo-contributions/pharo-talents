@@ -3,8 +3,8 @@ subclass: aSubclassSymbol uses: aTraitCompositionOrArray layout: layoutClass slo
 	| builderEnhancer |
 	
 	builderEnhancer := TraitBuilderEnhancer new.
-	builderEnhancer traitComposition: aTraitCompositionOrArray asComposition.
-	builderEnhancer classTraitComposition: aTraitCompositionOrArray asComposition classComposition.	
+	builderEnhancer traitComposition: aTraitCompositionOrArray asTraitComposition.
+	builderEnhancer classTraitComposition: aTraitCompositionOrArray asTraitComposition classComposition.	
 	
 	^ ShiftClassInstaller
 		make: [ :builder | 

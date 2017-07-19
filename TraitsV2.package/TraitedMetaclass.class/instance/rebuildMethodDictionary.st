@@ -3,7 +3,7 @@ rebuildMethodDictionary
 	| selectors compositionToUse |
 	compositionToUse := (superclass isKindOf: self class)
 		ifTrue: [ self composition ]
-		ifFalse: [ TraitedClassTrait asComposition + self composition ].
+		ifFalse: [ self class traitedClassTrait + self composition ].
 
 	selectors := compositionToUse selectors
 		reject: [ :e | myMethodDict keys includes: e ].

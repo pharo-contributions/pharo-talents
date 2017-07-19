@@ -1,3 +1,3 @@
 accessing
 + anotherTrait
-	^ self asComposition + anotherTrait asComposition
+	^ self asTraitComposition + anotherTrait asTraitComposition

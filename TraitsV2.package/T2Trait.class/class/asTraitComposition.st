@@ -1,3 +1,3 @@
-*Talents
-asComposition
+accessing
+asTraitComposition
 	^ CompositionElement for: self.

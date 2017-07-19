@@ -1,3 +1,0 @@
-operations
-slots
-	^ self shouldBeImplemented

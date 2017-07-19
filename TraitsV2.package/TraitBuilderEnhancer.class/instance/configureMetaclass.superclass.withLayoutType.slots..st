@@ -3,6 +3,6 @@ configureMetaclass: newMetaclass superclass: superclass withLayoutType: aLayoutT
 	| compositionToUse |
 	compositionToUse := (superclass isKindOf: TraitedMetaclass)
 		ifTrue: [ classTraitComposition ]
-		ifFalse: [ TraitedClassTrait asComposition + classTraitComposition ].
+		ifFalse: [ TraitedMetaclass traitedClassTrait + classTraitComposition ].
 
 	newMetaclass superclass: superclass withLayoutType: aLayoutType slots: classSlots , compositionToUse slots

@@ -2,7 +2,7 @@ operations
 doCopyObject: anObject withoutTalent: aClass
 	| originalClass newObject newClass calculatedTalent talentToRemove |
 	
-	talentToRemove := aClass asComposition.
+	talentToRemove := aClass asTraitComposition.
 	
 	originalClass := self findOriginalClass: anObject class.
 	calculatedTalent := self calculateNewTalentFor: anObject removing: talentToRemove.
