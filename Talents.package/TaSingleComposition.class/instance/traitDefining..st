@@ -1,0 +1,3 @@
+accessing
+traitDefining: selector
+	^ inner

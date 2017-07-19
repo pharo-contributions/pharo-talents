@@ -1,25 +1,16 @@
 operations
 extendClass: aClass with: aTalent
-	| builder newClass |
-	talentedClasses associations
-		detect: [ :e | e value = aTalent ]
-		ifFound: [ :e | ^ e key ]
-		ifNone: [  ].
+	| newClass |
+	talentedClasses associations detect: [ :e | e value = aTalent ] ifFound: [ :e | ^ e key ] ifNone: [  ].
 
-	builder := ShiftClassBuilder new
-		buildEnvironment: ShSmalltalkGlobalsEnvironment new;
-		yourself.
-
-	builder
-		name: aClass name , '_' , aTalent name;
-		slots: aTalent slots;
-		layoutClass: aClass classLayout class;
-		superclass: aClass.
-
-	newClass := builder build.
-
-	aTalent compileAllInto: newClass.
-
+	newClass := aClass
+		annonymousSubclass: aClass name , '_' , aTalent name
+		uses: aTalent
+		slots: #()
+		classVariables: ''
+		poolDictionaries: ''
+		category: 'Unclassified'.
+		
 	talentedClasses at: newClass put: aTalent.
-
+		
 	^ newClass

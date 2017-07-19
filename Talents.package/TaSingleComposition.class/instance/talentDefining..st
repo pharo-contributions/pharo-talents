@@ -1,3 +1,0 @@
-accessing
-talentDefining: selector
-	^ inner

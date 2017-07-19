@@ -1,3 +1,3 @@
 accessing
-talentDefining: aSelector
+traitDefining: aSelector
 	NotFound signalFor: aSelector
