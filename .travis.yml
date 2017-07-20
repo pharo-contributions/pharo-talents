@@ -15,4 +15,4 @@ install:
   - ./scripts/disable-deprecation-warning.sh 
 
 script:
-  - ./pharo talents.image test --no-xterm --fail-on-failure "Talents-Tests"
+  - ./pharo talents.image test --no-xterm --fail-on-failure "Talents-Tests" "TraitsV2-Tests"
