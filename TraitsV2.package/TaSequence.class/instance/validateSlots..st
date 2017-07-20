@@ -1,9 +1,8 @@
 validations
 validateSlots: aNewTalent
-	self slots do: [ :e | aNewTalent slots anySatisfy: 
-			[ :other | 
+	self slots
+		do: [ :e | 
+			aNewTalent slots
+				do: [ :other | 
 					e name = other name
-						ifTrue: [ 
-							aNewTalent inspect.
-							members inspect.
-							self error: 'The added talent duplicates an existing slot ' , e name printString ] ] ]
+						ifTrue: [ self error: 'The added talent duplicates an existing slot ' , e name printString ] ] ]
