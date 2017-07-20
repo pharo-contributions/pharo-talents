@@ -3,7 +3,7 @@ builder: builder subclassName: aSubclassSymbol uses: aTraitCompositionOrArray la
 	| builderEnhancer |
 	builderEnhancer := TraitBuilderEnhancer new.
 	builderEnhancer traitComposition: aTraitCompositionOrArray asTraitComposition.
-	builderEnhancer classTraitComposition: aTraitCompositionOrArray asTraitComposition classComposition.
+	builderEnhancer classTraitComposition: aTraitCompositionOrArray asTraitComposition classComposition. 
 
 	builder
 		metaclassClass: TraitedMetaclass;

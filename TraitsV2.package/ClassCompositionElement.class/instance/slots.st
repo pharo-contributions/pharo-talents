@@ -1,3 +1,5 @@
 accessing
 slots
-	^ super slots reject: [ :e | TraitedClassTrait slots includes: e ]
+	^ (innerClass slots
+		reject: [ :e | TraitedClassTrait slots anySatisfy: [ :x | x name = e name ] ])
+		collect: [ :e | self copySlot: e ]

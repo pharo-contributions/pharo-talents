@@ -1,3 +1,3 @@
 accessing
 traitedClassTrait
-	^ CompositionElement for: TraitedClassTrait
+	^ (CompositionElement for: TraitedClassTrait) -- #methodDict

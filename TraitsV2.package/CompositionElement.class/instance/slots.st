@@ -1,3 +1,3 @@
 accessing
 slots
-	^ innerClass slots
+	^ innerClass slots collect: [ :e | self copySlot: e ]
