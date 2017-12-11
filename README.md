@@ -8,6 +8,8 @@ Allowing adding and removing behavior to objects, without modifying the classes.
 ## Install Talents
 
 ```
+Iceberg enableMetacelloIntegration: true.
+
 Metacello new
   baseline: 'Talents';
   repository: 'github://tesonep/pharo-talents';
