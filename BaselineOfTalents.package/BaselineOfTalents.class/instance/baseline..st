@@ -2,12 +2,12 @@ baselines
 baseline: spec
 	<baseline>
 	spec for: #common do: [ spec
-		baseline: 'AtomicClassInstaller' with: [ spec
-			repository: 'github://tesonep/pharo-AtomicClassInstaller/mc';
-			loads: 'shift-installer' ];
+		baseline: 'Shift' with: [ spec
+			repository: 'github://tesonep/shift/src';
+			loads: 'core' ];
 
-		package: 'Talents' with: [ spec requires: #(AtomicClassInstaller) ];
-		package: 'TraitsV2' with: [ spec requires: #(AtomicClassInstaller) ];
+		package: 'Talents' with: [ spec requires: #(Shift) ];
+		package: 'TraitsV2' with: [ spec requires: #(Shift) ];
 		package: 'Talents-Tests' with: [ spec requires: #(core extensions) ];
 		package: 'TraitsV2-Tests' with: [ spec requires: #(core extensions) ];
 		package: 'TraitsV2-Extensions' with: [ spec requires: #(core) ];
