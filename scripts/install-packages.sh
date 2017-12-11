@@ -4,7 +4,7 @@ set -ex
 
 ./pharo Pharo.image eval "
 
-Iceberg enableMetacelloIntegration.
+Iceberg enableMetacelloIntegration: true.
 
 Metacello new 
 	baseline: 'Talents';
