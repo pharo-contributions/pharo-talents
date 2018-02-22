@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testCopyingArray
 	| x t1 |
 	x := { 1. 2. 3. }.

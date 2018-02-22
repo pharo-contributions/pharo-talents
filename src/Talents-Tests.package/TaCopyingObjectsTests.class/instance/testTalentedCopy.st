@@ -1,7 +1,7 @@
-as yet unclassified
+tests
 testTalentedCopy
 	| t1 x x2 |
-	t1 := self newTalent: '#SomeTalent'.
+	t1 := self newTalent: #SomeTalent.
 	t1 compile: 'aMessage 
 			^ 42
 	   '.

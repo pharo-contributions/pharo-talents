@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testInitializeSlot
 	| x |
 	x := Object new.

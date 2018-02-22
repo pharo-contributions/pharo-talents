@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testInitializeSlot
 	| x |
 	x := {1. 2. 3}.

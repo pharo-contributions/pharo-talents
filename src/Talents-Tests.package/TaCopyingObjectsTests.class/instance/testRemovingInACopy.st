@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testRemovingInACopy
 	| x t1 x2 x3 |
 	x := { 1. 2. 3. } asBag.

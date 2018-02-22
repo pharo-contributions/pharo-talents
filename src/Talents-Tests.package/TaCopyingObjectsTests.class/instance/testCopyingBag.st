@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testCopyingBag
 	| x t1 x2 |
 	x := { 1. 2. 3. } asBag.

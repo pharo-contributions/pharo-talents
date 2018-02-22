@@ -5,4 +5,4 @@ testAliasMethod
 	x addTalent: (taTestTalent asTraitComposition @ { #otherName -> #someMessage}).
 	
 	self assert: x otherName equals: 42.
-	self deny: (x class canUnderstand: #someMessage).
+	self assert: (x class canUnderstand: #someMessage).

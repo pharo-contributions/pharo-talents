@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testAddingASecondTalentDoNotReinitializeTheFirst
 	| x t1 t2 |
 	x := Object new.

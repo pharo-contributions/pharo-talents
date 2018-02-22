@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testRenameKeepingOrderSlot
 	| x t1 |
 	x := Object new.
