@@ -8,7 +8,7 @@ Iceberg enableMetacelloIntegration: true.
 
 Metacello new 
 	baseline: 'Talents';
-	repository: 'filetree://.';
+	repository: 'filetree://./src';
 	load.
 
 Smalltalk saveAs:'talents'.
