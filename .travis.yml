@@ -11,7 +11,7 @@ addons:
       - libfreetype6:i386
 
 install: 
-  - wget -O - get.pharo.org/61+vm | bash
+  - ./scripts/download.sh
   - ./scripts/install-packages.sh
   - ./scripts/disable-deprecation-warning.sh 
 
