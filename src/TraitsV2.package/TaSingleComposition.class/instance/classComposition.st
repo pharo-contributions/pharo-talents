@@ -1,3 +1,0 @@
-accessing
-classComposition
-	^ inner classComposition

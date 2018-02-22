@@ -1,3 +1,0 @@
-querying
-traits
-	^ { innerClass }

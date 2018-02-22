@@ -1,4 +1,0 @@
-copying
-copyTraitExpression
-	^ self
-	

@@ -1,3 +1,0 @@
-initialization
-initializeSelectorForMe
-	^ self shouldBeImplemented

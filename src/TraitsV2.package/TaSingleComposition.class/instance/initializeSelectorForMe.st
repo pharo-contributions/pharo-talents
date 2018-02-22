@@ -1,3 +1,0 @@
-accessing
-initializeSelectorForMe
-	^ inner initializeSelectorForMe.
