@@ -1,18 +1,26 @@
 # Talents for Pharo
 
 Pharo-Talents is a library that provides a clean implementation of Talents for Pharo Smalltalk. 
-It is based in a new implementation of the ClassBuilder that allows the creation of really independent classes in the system.
+It is based in a new implementation of the ClassBuilder and Traits that allows the creation of really independent classes in the system.
 
 Allowing adding and removing behavior to objects, without modifying the classes.
 
 ## Install Talents
 
-```
-Iceberg enableMetacelloIntegration: true.
+Talents is developed using the new Traits implementation, this implementation is still to be integrated in the image. 
+To get an image compatible you can execute
+```bash
+wget "https://ci.inria.fr/pharo-ci-jenkins2/job/Test%20pending%20pull%20request%20and%20branch%20Pipeline/view/change-requests/job/PR-871/lastSuccessfulBuild/artifact/bootstrap-cache/*zip*/bootstrap-cache.zip"
+unzip -jo bootstrap-cache.zip "bootstrap-cache/Pharo7.0-32bit-*.zip"
+unzip Pharo7.0-32bit-*.zip
+````
 
+Once you have an image you can execute the following script to install the project.
+
+```
 Metacello new
   baseline: 'Talents';
-  repository: 'github://tesonep/pharo-talents';
+  repository: 'github://tesonep/pharo-talents/src';
   load.
 ```
 
@@ -20,13 +28,12 @@ Metacello new
 
 ### What is a Talent?
 
-A talent is only a class definition. This library uses regular classes as talents. This is in order of reuse the existing 
+A talent is only a trait definition. This library uses regular traits as talents. This is in order of reuse the existing 
 infrastructure of Pharo. 
 
-When you add a talent to an object all the behavior and slots of the class used as a talent are flatenized in the object. 
+When you add a talent to an object all the behavior and slots of the trait used as a talent are flatenized in the object. 
 
-In the current implementation is required that the class used as talent is subclass of a class present in the hierarchy of the 
-talented object. Normally the talents are subclasses of Object. 
+Any trait composition can be used to as a talent, allowing more complex talented objects.
 
 ### Adding a Talent
 
@@ -45,9 +52,38 @@ For talenting an existing object:
 anObject addTalent: aTalent
 ```
 
+As any Trait composition can be used as a Talent, we can use the operations in traits. 
+For example, we can alias one of the selector in the talent.
+
+```
+anObject addTalent: (aTalent @ {#originalSelector -> #aliasSelector}) 
+```
 
 ### Removing a Talent
 
+Removing a talent is also straight forward.
+
+```
+anObject removeTalent: aTalent.
+```
+
+If an object has more than one talent only the passed talent is removed from the object.
+
 ### Composition Operations
 
-### Example
+As said before any trait composition operation can be used as talents.
+
+When two talents are added to an object they are sequenced in a trait composition:
+
+```
+anObject addTalent: aTalent
+anObject addTalent: otherTalent
+```
+
+is equivalent to:
+
+```
+anObject addTalent: aTalent + otherTalent.
+```
+
+Other more complex operations can be performed using the trait algebra. For more details check the class TaAbstractComposition.
