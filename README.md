@@ -1,21 +1,15 @@
 # Talents for Pharo
 
+Talents are Traits that are installed on single objects.
+
 Pharo-Talents is a library that provides a clean implementation of Talents for Pharo Smalltalk. 
 It is based in a new implementation of the ClassBuilder and Traits that allows the creation of really independent classes in the system.
 
-Allowing adding and removing behavior to objects, without modifying the classes.
+Talents enables adding and removing behavior and state to objects, without modifying the classes.
 
 ## Install Talents
 
-Talents is developed using the new Traits implementation, this implementation is still to be integrated in the image. 
-To get an image compatible you can execute
-```bash
-wget "https://ci.inria.fr/pharo-ci-jenkins2/job/Test%20pending%20pull%20request%20and%20branch%20Pipeline/view/change-requests/job/PR-871/lastSuccessfulBuild/artifact/bootstrap-cache/*zip*/bootstrap-cache.zip"
-unzip -jo bootstrap-cache.zip "bootstrap-cache/Pharo7.0-32bit-*.zip"
-unzip Pharo7.0-32bit-*.zip
-````
-
-Once you have an image you can execute the following script to install the project.
+Talents is developed using the new Traits implementation of Pharo8. Install with:
 
 ```
 Metacello new
