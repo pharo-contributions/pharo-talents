@@ -7,6 +7,8 @@ It is based in a new implementation of the ClassBuilder and Traits that allows t
 
 Talents enables adding and removing behavior and state to objects, without modifying the classes.
 
+This is an implementation of the idea presented in the work of [Ressia et al. "Talents: an environment for dynamically composing units of reuse"](http://scg.unibe.ch/archive/papers/Ress12eTalentsSPE.pdf).
+
 ## Install Talents
 
 Talents is developed using the new Traits implementation of Pharo8. Install with:
