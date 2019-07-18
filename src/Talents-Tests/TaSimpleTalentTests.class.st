@@ -85,6 +85,18 @@ TaSimpleTalentTests >> testAddingSimpleTrait [
 ]
 
 { #category : #'tests-talents' }
+TaSimpleTalentTests >> testClassSideMethods [
+	| x |
+	x := TaTestClassWithInstanceVariable new.
+	x anInstanceVariable: 23.
+	
+	x addTalent: taTalentWithClassSide.
+	
+	self assert: x class aClassMessage equals: 42.
+
+]
+
+{ #category : #'tests-talents' }
 TaSimpleTalentTests >> testCopyingObjectState [
 	| x |
 	x := TaTestClassWithInstanceVariable new.

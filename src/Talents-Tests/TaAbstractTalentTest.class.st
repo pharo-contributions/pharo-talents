@@ -9,9 +9,10 @@ Class {
 		'taTalentWithASlot',
 		'taTalentWithASlotInitialized',
 		'taAnotherInitializedSlot',
-		'createdClasses'
+		'createdClasses',
+		'taTalentWithClassSide'
 	],
-	#category : 'Talents-Tests'
+	#category : #'Talents-Tests'
 }
 
 { #category : #'as yet unclassified' }
@@ -85,6 +86,11 @@ TaAbstractTalentTest >> setUp [
 			anotherSlot := 93.
 	'.
 
+	taTalentWithClassSide := self newTalent: #TaTalentWithClassSide with: #().
+	taTalentWithClassSide class compile: '
+	aClassMessage 
+		^ 42
+	'.
 ]
 
 { #category : #running }
