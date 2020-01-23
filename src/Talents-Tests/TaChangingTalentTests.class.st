@@ -1,7 +1,7 @@
 Class {
 	#name : #TaChangingTalentTests,
 	#superclass : #TaAbstractTalentTest,
-	#category : 'Talents-Tests'
+	#category : #'Talents-Tests'
 }
 
 { #category : #'tests-talents' }
@@ -22,6 +22,9 @@ TaChangingTalentTests >> testAddingMethodInADeepAliasTalent [
 { #category : #'tests-talents' }
 TaChangingTalentTests >> testAddingMethodInATalent [
 	| x | 
+	"This test will take an instance of Object and add to this single instance the method #someMessage.
+	This method returns 42, so we assert that"
+	
 	x := Object new.
 	x addTalent: taTestTalent.
 	
