@@ -7,7 +7,7 @@ Class {
 	#classInstVars : [
 		'uniqueInstance'
 	],
-	#category : 'Talents-Installer'
+	#category : #'Talents-Installer'
 }
 
 { #category : #'as yet unclassified' }
@@ -122,7 +122,9 @@ TalentInstaller >> doCopyObject: anObject withoutTalent: aClass [
 { #category : #operations }
 TalentInstaller >> extendClass: aClass with: aTalent [
 	| newClass |
-	talentedClasses associations detect: [ :e | e value = aTalent ] ifFound: [ :e | ^ e key ] ifNone: [  ].
+	talentedClasses associations 
+		detect: [ :e | e key superclass = aClass and: [e value = aTalent] ] 
+		ifFound: [ :e | ^ e key ] ifNone: [  ].
 
 	newClass := Smalltalk anonymousClassInstaller make: [ :builder |
 		builder

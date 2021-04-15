@@ -1,11 +1,11 @@
 Class {
-	#name : #TaArrayTests,
+	#name : #TaArrayTest,
 	#superclass : #TaAbstractTalentTest,
-	#category : 'Talents-Tests'
+	#category : #'Talents-Tests'
 }
 
 { #category : #tests }
-TaArrayTests >> testInitializeSlot [
+TaArrayTest >> testInitializeSlot [
 	| x |
 	x := {1. 2. 3}.
 	x addTalent: taTalentWithASlotInitialized.

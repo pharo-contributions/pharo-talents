@@ -15,6 +15,15 @@ Class {
 	#category : #'Talents-Tests'
 }
 
+{ #category : #'instance creation' }
+TaAbstractTalentTest >> newClass: aName with: slots [
+	| class |
+	class := Object subclass: aName slots: slots classVariables: #() package: 'Talents-Tests-TestClasses'.
+	createdClasses add:class.
+	
+	^class.
+]
+
 { #category : #'as yet unclassified' }
 TaAbstractTalentTest >> newTalent: aName [
 	^ self newTalent:aName with:#().
@@ -23,7 +32,7 @@ TaAbstractTalentTest >> newTalent: aName [
 { #category : #'instance creation' }
 TaAbstractTalentTest >> newTalent: aName with: slots [
 	| class |
-	class := Trait named: aName uses: { } slots: slots category: 'Talents-Tests-TestClasses'  env: self class environment. 
+	class := Trait named: aName uses: { } slots: slots package: 'Talents-Tests-TestClasses'  env: self class environment. 
 	createdClasses add:class.
 	
 	^class.

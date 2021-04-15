@@ -1,11 +1,11 @@
 Class {
-	#name : #TaTalentCompositionTests,
+	#name : #TaTalentCompositionTest,
 	#superclass : #TaAbstractTalentTest,
-	#category : 'Talents-Tests'
+	#category : #'Talents-Tests'
 }
 
 { #category : #tests }
-TaTalentCompositionTests >> testAddingTwoNonClashingTalents [
+TaTalentCompositionTest >> testAddingTwoNonClashingTalents [
 	| x |
 	x := TaTestClassWithInstanceVariable new.
 	x anInstanceVariable: 32.
@@ -21,7 +21,7 @@ TaTalentCompositionTests >> testAddingTwoNonClashingTalents [
 ]
 
 { #category : #tests }
-TaTalentCompositionTests >> testAliasMethod [
+TaTalentCompositionTest >> testAliasMethod [
 	| x |
 	x := Object new.
 	x addTalent: (taTestTalent asTraitComposition @ { #otherName -> #someMessage}).
@@ -32,7 +32,7 @@ TaTalentCompositionTests >> testAliasMethod [
 ]
 
 { #category : #tests }
-TaTalentCompositionTests >> testAliasRecursiveMethod [
+TaTalentCompositionTest >> testAliasRecursiveMethod [
 	" The alias is not rewriting the uses of this message inside the talent. A deep alias performs this"
 	| x |
 	x := Object new.
@@ -44,7 +44,7 @@ TaTalentCompositionTests >> testAliasRecursiveMethod [
 ]
 
 { #category : #tests }
-TaTalentCompositionTests >> testDeepAliasRecursiveMethod [
+TaTalentCompositionTest >> testDeepAliasRecursiveMethod [
 	" The alias is not rewriting the uses of this message inside the talent. A deep alias performs this"
 	| x |
 	x := Object new.
@@ -56,7 +56,7 @@ TaTalentCompositionTests >> testDeepAliasRecursiveMethod [
 ]
 
 { #category : #tests }
-TaTalentCompositionTests >> testRemovingMethod [
+TaTalentCompositionTest >> testRemovingMethod [
 	| x |
 	x := Object new.
 	x addTalent: (taTestTalentWithTwoMethods asTraitComposition - {#aM2} ).
@@ -67,7 +67,7 @@ TaTalentCompositionTests >> testRemovingMethod [
 ]
 
 { #category : #tests }
-TaTalentCompositionTests >> testValidateDuplicateMethod [
+TaTalentCompositionTest >> testValidateDuplicateMethod [
 	| x t1 t2|
 
 	x := Object new.
@@ -82,7 +82,7 @@ TaTalentCompositionTests >> testValidateDuplicateMethod [
 ]
 
 { #category : #tests }
-TaTalentCompositionTests >> testValidateDuplicateSlot [
+TaTalentCompositionTest >> testValidateDuplicateSlot [
 	| x t1 t2|
 
 	x := Object new.
@@ -95,7 +95,7 @@ TaTalentCompositionTests >> testValidateDuplicateSlot [
 ]
 
 { #category : #tests }
-TaTalentCompositionTests >> testValidateDuplicationOfTalent [
+TaTalentCompositionTest >> testValidateDuplicationOfTalent [
 	| x |
 	x := Object new.
 	self should:[x addTalent: taTestTalent , taTestTalent] raise:Error.

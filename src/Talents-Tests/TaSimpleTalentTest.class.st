@@ -1,11 +1,11 @@
 Class {
-	#name : #TaSimpleTalentTests,
+	#name : #TaSimpleTalentTest,
 	#superclass : #TaAbstractTalentTest,
-	#category : 'Talents-Tests'
+	#category : #'Talents-Tests'
 }
 
 { #category : #'tests-talents' }
-TaSimpleTalentTests >> testAdding2SimpleTalent [
+TaSimpleTalentTest >> testAdding2SimpleTalent [
 	| x t2 |
 	x := Object new.
 	x addTalent: taTestTalent.
@@ -35,7 +35,7 @@ TaSimpleTalentTests >> testAdding2SimpleTalent [
 ]
 
 { #category : #'tests-traits' }
-TaSimpleTalentTests >> testAdding2SimpleTrait [
+TaSimpleTalentTest >> testAdding2SimpleTrait [
 	| x t2 traitedClass |
 	traitedClass := Object copyWithTrait: taTestTalent.
 	x := traitedClass new.
@@ -65,7 +65,7 @@ TaSimpleTalentTests >> testAdding2SimpleTrait [
 ]
 
 { #category : #'tests-talents' }
-TaSimpleTalentTests >> testAddingSimpleTalent [
+TaSimpleTalentTest >> testAddingSimpleTalent [
 	| x |
 	x := Object new.
 	x addTalent: taTestTalent.
@@ -75,7 +75,7 @@ TaSimpleTalentTests >> testAddingSimpleTalent [
 ]
 
 { #category : #'tests-traits' }
-TaSimpleTalentTests >> testAddingSimpleTrait [
+TaSimpleTalentTest >> testAddingSimpleTrait [
 	| x traitedClass |
 	traitedClass := Object copyWithTrait: taTestTalent.
 	x := traitedClass new.
@@ -85,7 +85,7 @@ TaSimpleTalentTests >> testAddingSimpleTrait [
 ]
 
 { #category : #'tests-talents' }
-TaSimpleTalentTests >> testClassSideMethods [
+TaSimpleTalentTest >> testClassSideMethods [
 	| x |
 	x := TaTestClassWithInstanceVariable new.
 	x anInstanceVariable: 23.
@@ -97,7 +97,7 @@ TaSimpleTalentTests >> testClassSideMethods [
 ]
 
 { #category : #'tests-talents' }
-TaSimpleTalentTests >> testCopyingObjectState [
+TaSimpleTalentTest >> testCopyingObjectState [
 	| x |
 	x := TaTestClassWithInstanceVariable new.
 	x anInstanceVariable: 23.

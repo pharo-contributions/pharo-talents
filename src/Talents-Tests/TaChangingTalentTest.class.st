@@ -1,11 +1,11 @@
 Class {
-	#name : #TaChangingTalentTests,
+	#name : #TaChangingTalentTest,
 	#superclass : #TaAbstractTalentTest,
-	#category : 'Talents-Tests'
+	#category : #'Talents-Tests'
 }
 
 { #category : #'tests-talents' }
-TaChangingTalentTests >> testAddingMethodInADeepAliasTalent [
+TaChangingTalentTest >> testAddingMethodInADeepAliasTalent [
 	| x | 
 	x := Object new.
 	x addTalent: (taTestTalent asTraitComposition @= {#newMessage -> #someMessage}).
@@ -20,7 +20,7 @@ TaChangingTalentTests >> testAddingMethodInADeepAliasTalent [
 ]
 
 { #category : #'tests-talents' }
-TaChangingTalentTests >> testAddingMethodInATalent [
+TaChangingTalentTest >> testAddingMethodInATalent [
 	| x | 
 	x := Object new.
 	x addTalent: taTestTalent.
@@ -35,7 +35,7 @@ TaChangingTalentTests >> testAddingMethodInATalent [
 ]
 
 { #category : #'tests-talents' }
-TaChangingTalentTests >> testChangingAMethodInATalent [
+TaChangingTalentTest >> testChangingAMethodInATalent [
 	| x | 
 	x := Object new.
 	x addTalent: taTestTalent.
@@ -50,7 +50,7 @@ TaChangingTalentTests >> testChangingAMethodInATalent [
 ]
 
 { #category : #'tests-traits' }
-TaChangingTalentTests >> testChangingAMethodInATrait [
+TaChangingTalentTest >> testChangingAMethodInATrait [
 	| x traitedClass | 
 	traitedClass := Object copyWithTrait: taTestTalent.
 	x := traitedClass new.
@@ -65,7 +65,7 @@ TaChangingTalentTests >> testChangingAMethodInATrait [
 ]
 
 { #category : #'tests-talents' }
-TaChangingTalentTests >> testChangingMethodInADeepAliasTalent [
+TaChangingTalentTest >> testChangingMethodInADeepAliasTalent [
 	| x | 
 	x := Object new.
 	x addTalent: (taTestTalent asTraitComposition @= {#newMessage -> #someMessage}).
@@ -80,7 +80,7 @@ TaChangingTalentTests >> testChangingMethodInADeepAliasTalent [
 ]
 
 { #category : #'tests-talents' }
-TaChangingTalentTests >> testRemovingAMethodInATalent [
+TaChangingTalentTest >> testRemovingAMethodInATalent [
 	| x | 
 	x := Object new.
 	x addTalent: taTestTalent.
@@ -93,7 +93,7 @@ TaChangingTalentTests >> testRemovingAMethodInATalent [
 ]
 
 { #category : #'tests-talents' }
-TaChangingTalentTests >> testRemovingMethodInADeepAliasTalent [
+TaChangingTalentTest >> testRemovingMethodInADeepAliasTalent [
 	| x | 
 	x := Object new.
 	x addTalent: (taTestTalent asTraitComposition @= {#newMessage -> #someMessage}).

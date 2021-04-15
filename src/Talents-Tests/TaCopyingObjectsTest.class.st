@@ -1,11 +1,11 @@
 Class {
-	#name : #TaCopyingObjectsTests,
+	#name : #TaCopyingObjectsTest,
 	#superclass : #TaAbstractTalentTest,
-	#category : 'Talents-Tests'
+	#category : #'Talents-Tests'
 }
 
 { #category : #tests }
-TaCopyingObjectsTests >> testCopyingArray [
+TaCopyingObjectsTest >> testCopyingArray [
 	| x t1 |
 	x := { 1. 2. 3. }.
 	t1 := self newTalent: #Tamanio.
@@ -16,7 +16,7 @@ TaCopyingObjectsTests >> testCopyingArray [
 ]
 
 { #category : #tests }
-TaCopyingObjectsTests >> testCopyingBag [
+TaCopyingObjectsTest >> testCopyingBag [
 	| x t1 x2 |
 	x := { 1. 2. 3. } asBag.
 	t1 := self newTalent: #Tamanio.
@@ -33,7 +33,7 @@ TaCopyingObjectsTests >> testCopyingBag [
 ]
 
 { #category : #tests }
-TaCopyingObjectsTests >> testRemovingInACopy [
+TaCopyingObjectsTest >> testRemovingInACopy [
 	| x t1 x2 x3 |
 	x := { 1. 2. 3. } asBag.
 	t1 := self newTalent: #Tamanio.
@@ -51,7 +51,7 @@ TaCopyingObjectsTests >> testRemovingInACopy [
 ]
 
 { #category : #tests }
-TaCopyingObjectsTests >> testReplacingBag [
+TaCopyingObjectsTest >> testReplacingBag [
 	| x t1 x2 |
 	x := { 1. 2. 3. } asBag.
 	t1 := self newTalent: #Tamanio.
@@ -68,7 +68,7 @@ TaCopyingObjectsTests >> testReplacingBag [
 ]
 
 { #category : #tests }
-TaCopyingObjectsTests >> testTalentedCopy [
+TaCopyingObjectsTest >> testTalentedCopy [
 	| t1 x x2 |
 	t1 := self newTalent: #SomeTalent.
 	t1 compile: 'aMessage 
