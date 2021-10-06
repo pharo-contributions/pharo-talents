@@ -24,6 +24,16 @@ BaselineOfTalents >> baseline: spec [
 			group: 'core'
 				with: #('Talents-Pharo8');
 			group: 'test'
-				with: #('Talents-Tests' 'Talents-Pharo8')
+				with: #('Talents-Tests' 'Talents-Pharo8');
+
+			postLoadDoIt: #'postload:package:'
 	]
+]
+
+{ #category : #actions }
+BaselineOfTalents >> postload: loader package: packageSpec [
+
+	"Add missing instance variable, required for extension method behavior."
+
+	TaRenameSlot addInstVarNamed: #renames
 ]
