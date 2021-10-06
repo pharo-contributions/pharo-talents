@@ -26,12 +26,12 @@ BaselineOfTalents >> baseline: spec [
 			group: 'test'
 				with: #('Talents-Tests' 'Talents-Pharo8');
 
-			postLoadDoIt: #'postload:package:'
+			preLoadDoIt: #'preload:package:'
 	]
 ]
 
 { #category : #actions }
-BaselineOfTalents >> postload: loader package: packageSpec [
+BaselineOfTalents >> preload: loader package: packageSpec [
 
 	"Add missing instance variable, required for extension method behavior."
 
