@@ -1,7 +1,7 @@
 Class {
 	#name : #TaTalentSlotsTests,
 	#superclass : #TaAbstractTalentTest,
-	#category : 'Talents-Tests'
+	#category : #'Talents-Tests'
 }
 
 { #category : #tests }
@@ -10,7 +10,7 @@ TaTalentSlotsTests >> testInitializeSlot [
 	x := Object new.
 	x addTalent: taTalentWithASlotInitialized.
 
-	self assert: x anSlot equals: 55.
+	self assert: x aSlot equals: 55.
 ]
 
 { #category : #tests }
@@ -33,11 +33,11 @@ TaTalentSlotsTests >> testRenameKeepingOrderSlot [
 TaTalentSlotsTests >> testRenameSlot [
 	| x |
 	x := Object new.
-	x addTalent: taTalentWithASlotInitialized asTraitComposition >> (#anSlot -> #otherName).
+	x addTalent: taTalentWithASlotInitialized asTraitComposition >> (#aSlot -> #otherName).
 
-	self assert: x anSlot equals: 55.
+	self assert: x aSlot equals: 55.
 	self assert: (x instVarNamed: #otherName) equals: 55.
-	self should: [ x instVarAt: #anSlot ] raise: Error
+	self should: [ x instVarAt: #aSlot ] raise: Error
 ]
 
 { #category : #tests }
@@ -46,8 +46,8 @@ TaTalentSlotsTests >> testSimpleSlot [
 	x := Object new.
 	x addTalent: taTalentWithASlot.
 
-	x anSlot: 23.
-	self assert: x anSlot equals: 23.
+	x aSlot: 23.
+	self assert: x aSlot equals: 23.
 ]
 
 { #category : #tests }
@@ -56,6 +56,6 @@ TaTalentSlotsTests >> testTalentSequenceInitialization [
 	x := Object new.
 	x addTalent: taTalentWithASlotInitialized asTraitComposition + taAnotherInitializedSlot asTraitComposition.
 
-	self assert: x anSlot equals: 55.
+	self assert: x aSlot equals: 55.
 	self assert: x anotherSlot equals: 93.
 ]

@@ -65,24 +65,24 @@ TaAbstractTalentTest >> setUp [
 			^ x = 0 ifTrue:[ 0 ] ifFalse:[ x + (self someRecursive: x - 1) ]
 	'.
 	
-	taTalentWithASlot := self newTalent: #TaTalentWithASlot with: {#anSlot => InstanceVariableSlot}.
+	taTalentWithASlot := self newTalent: #TaTalentWithASlot with: {#aSlot => InstanceVariableSlot}.
 	taTalentWithASlot compile: '
-		anSlot
-			^ anSlot.
+		aSlot
+			^ aSlot.
 	'.
 		taTalentWithASlot compile: '
-		anSlot: aValue
-			anSlot:=aValue.
+		aSlot: aValue
+			aSlot := aValue.
 	'.
 	
-	taTalentWithASlotInitialized := self newTalent: #TaTalentWithASlotInitiliazed with: #(anSlot).
+	taTalentWithASlotInitialized := self newTalent: #TaTalentWithASlotInitialized with: #(aSlot).
 	taTalentWithASlotInitialized compile: '
-		anSlot
-			^ anSlot.
+		aSlot
+			^ aSlot.
 	'.
 	taTalentWithASlotInitialized compile: '
 		initializeTalent
-			anSlot := 55.
+			aSlot := 55.
 	'.
 	
 	taAnotherInitializedSlot := self newTalent: #TaAnotherInitializedSlot with: #(anotherSlot).
