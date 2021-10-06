@@ -1,7 +1,7 @@
 Class {
 	#name : #BaselineOfTalents,
 	#superclass : #BaselineOf,
-	#category : 'BaselineOfTalents'
+	#category : #BaselineOfTalents
 }
 
 { #category : #baselines }
@@ -15,5 +15,15 @@ BaselineOfTalents >> baseline: spec [
 			with: #(Talents);
 		group: 'test'
 			with: #('Talents-Tests')
+	].
+	spec
+		for: #'pharo8.x'
+		do: [ spec
+			package: 'Talents-Pharo8' with: [ spec requires: #('Talents') ];
+
+			group: 'core'
+				with: #('Talents-Pharo8');
+			group: 'test'
+				with: #('Talents-Tests' 'Talents-Pharo8')
 	]
 ]
