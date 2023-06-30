@@ -96,6 +96,7 @@ TalentInstaller >> doCopyClass: aTargetClass withTrait: traitToAdd [
 { #category : #operations }
 TalentInstaller >> doCopyObject: anObject withTalent: aTalent [
 	| newObject newClass talentToAdd |
+
 	talentToAdd := aTalent asTraitComposition.
 	newClass := self doCopyClass: anObject class withTrait: talentToAdd.
 	newObject := self copyObject: anObject withNewClass: newClass.
@@ -146,8 +147,6 @@ TalentInstaller >> findOriginalClass: aClass [
 { #category : #initialization }
 TalentInstaller >> initialize [
 	talentedClasses := WeakKeyDictionary new.
-	
-	WeakArray addWeakDependent: talentedClasses.
 ]
 
 { #category : #'public API' }
@@ -160,6 +159,7 @@ TalentInstaller >> removeTalent: aClass fromObject: anObject [
 
 { #category : #operations }
 TalentInstaller >> talent: aTalent addedTo: anObject [
+
 	aTalent initializeObject: anObject
 ]
 
