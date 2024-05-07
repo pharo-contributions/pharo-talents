@@ -87,9 +87,9 @@ TaTalentCompositionTest >> testValidateDuplicateSlot [
 
 	x := Object new.
 
-	t1 := self newTalent:#T1 with: #(anSlot).
+	t1 := self newTalent:#T1 with: #(aSlot).
 
-	t2 := self newTalent:#T1 with: #(anSlot).
+	t2 := self newTalent:#T1 with: #(aSlot).
 	
 	self should:[x addTalent: t1 , t2] raise:Error.
 ]
