@@ -1,5 +1,9 @@
 # Talents for Pharo
 
+<a href="https://www.pharo.org">
+    <img alt="Pharo" src="https://img.shields.io/static/v1?style=for-the-badge&message=Pharo&color=3297d4&logo=Harbor&logoColor=FFFFFF&label=" />
+</a>
+
 Talents are Traits that are installed on single objects.
 
 Pharo-Talents is a library that provides a clean implementation of Talents for Pharo Smalltalk. 
